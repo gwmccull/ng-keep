@@ -1,4 +1,10 @@
 import angular from 'angular';
 // make this work
-import {Notes} from './notes';
-export let common = angular.module('common', []);
+import {noteFactory} from './notes';
+export let common = angular.module('common', [])
+    .factory('noteFactory', function(noteFactory) {
+        return {
+            getNotes: noteFactory.getNotes,
+            createNote: noteFactory.createNote
+        };
+    });
