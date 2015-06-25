@@ -8,6 +8,7 @@ let noteMakerComponent = ()=> {
         restrict: 'E',
         controller,
         replace: true,
+        scope: {},
         template
     };
 };

@@ -8,7 +8,9 @@ let noteComponent = ()=> {
         restrict: 'E',
         controller,
         replace: true,
-        template
+        template,
+        bindToController: true,
+        scope: { noteData: '='}
     };
 };
 

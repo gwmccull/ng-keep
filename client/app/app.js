@@ -20,7 +20,7 @@ angular.module('app', [
             template: `
                 <div>
                     <note-maker></note-maker>
-                    <note-list></note-list>
+                    <note-list>test...</note-list>
                 </div>
             `
         }

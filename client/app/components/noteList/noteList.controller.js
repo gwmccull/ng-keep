@@ -1,10 +1,12 @@
 class NoteListController {
     // inject things here
-    constructor() {
+    constructor(Notes) {
+        this.notes = Notes.getNotes();
+        console.log("notes", this.notes)
     }
 
 }
 
-NoteListController.$inject = [];
+NoteListController.$inject = ['Notes'];
 
 export {NoteListController};
